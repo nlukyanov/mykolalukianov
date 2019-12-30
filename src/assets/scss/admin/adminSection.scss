@@ -1,0 +1,57 @@
+.adminSection {
+  background: $whiteColor;
+  padding: $desktopSectionIndent;
+  border-radius: 4px;
+  overflow: hidden;
+  &__header {
+    margin: -$desktopSectionIndent #{-$desktopSectionIndent} $desktopSectionIndent;
+    padding: $desktopSectionIndent;
+    background: $greyMediumColor;
+    color: $whiteColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__header-actions {
+    flex: 0 0 auto;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: $Roboto;
+    line-height: 34px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &__title-icon {
+    margin-right: 10px;
+  }
+  &__error {
+    color: $errorColor;
+    padding: $desktopSectionIndent;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  &__info {
+    color: $greyLightColor;
+    padding: $desktopSectionIndent;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    > *:not(:first-child) {
+      margin-top: $desktopSectionIndent;
+    }
+  }
+}

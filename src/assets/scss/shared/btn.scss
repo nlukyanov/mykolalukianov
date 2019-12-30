@@ -1,0 +1,37 @@
+.btn-holder {
+  .btn {
+    margin: 0 $desktopSectionIndent / 2;
+  }
+}
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-family: $Roboto;
+  padding: 5px 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: $whiteColor;
+  font-weight: 400;
+  border-radius: 4px;
+  i {
+    margin-right: 10px;
+  }
+  &.btn-primary {
+    background: $brandBlue;
+    &:hover:not(.disabled) {
+      background: $brandBlueDark;
+    }
+  }
+  &.btn-error {
+    background: $errorColor;
+    &:hover:not(.disabled) {
+      background: $errorDarkColor;
+    }
+  }
+  &.disabled {
+    filter: grayscale(1);
+    cursor: default;
+  }
+}

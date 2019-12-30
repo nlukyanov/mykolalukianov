@@ -1,0 +1,33 @@
+@import '../../../assets/scss/utils/vars';
+@import '../../../assets/scss/utils/fonts';
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $desktopSectionIndent;
+  &:empty {
+    display: none;
+  }
+  &__num {
+    width: 30px;
+    height: 40px;
+    background: $lightColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $Roboto;
+    font-size: 16px;
+    line-height: 40px;
+    margin: 0 1px;
+    cursor: pointer;
+    &:hover,
+    &.isCurrent {
+      background: $greyMediumColor;
+      color: $whiteColor;
+    }
+    &.isCurrent {
+      cursor: default;
+    }
+  }
+}

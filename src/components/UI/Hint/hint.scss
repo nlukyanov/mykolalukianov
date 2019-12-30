@@ -1,0 +1,24 @@
+@import '../../../assets/scss/utils/fonts';
+
+.hint {
+  position: relative;
+  &:hover {
+    [class$="__text"] {
+      top: -80%;
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+  &__text {
+    position: absolute;
+    font-family: $Roboto;
+    text-transform: uppercase;
+    font-size: 12px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: all .15s ease-in-out;
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../../assets/scss/utils/vars';
+@import '../../../assets/scss/utils/fonts';
+
+.context {
+  user-select: none;
+  &__menu {
+    position: fixed;
+    left: -9999px;
+    top: -9999px;
+    background: $whiteColor;
+    z-index: 99999;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.25);
+    font-family: $Roboto;
+    white-space: nowrap;
+    > * {
+      padding: 0 15px 0 10px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      line-height: 40px;
+      cursor: pointer;
+      color: $greyLightColor;
+      &:hover {
+        color: $greyMediumColor;
+        background: $lightColor;
+        &.error {
+          color: $errorColor;
+        }
+      }
+      i {
+        width: 20px;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import '../../../assets/scss/utils/vars';
+
+.confirm {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  padding: $desktopPageIndent;
+  align-items: center;
+  &:before {
+    content: '';
+    background: $greyDarkColor;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: .95;
+  }
+  &__box {
+    background: $whiteColor;
+    padding: $desktopSectionIndent;
+    width: 300px;
+  }
+  &__message {
+    margin-bottom: $desktopSectionIndent;
+    padding-bottom: $desktopSectionIndent;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid $greyLightColor;
+  }
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+  }
+}

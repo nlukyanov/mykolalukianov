@@ -1,0 +1,13 @@
+@import '../../assets/scss/utils/vars';
+
+.adminContainer {
+  &__wrapper {
+    display: flex;
+  }
+  &__content {
+    width: 100%;
+    min-height: calc(100vh - #{$adminBarSize});
+    padding: $desktopPageIndent;
+    box-sizing: border-box;
+  }
+}

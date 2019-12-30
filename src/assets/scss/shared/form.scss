@@ -1,0 +1,50 @@
+.form {
+  &__field {
+    margin-top: 20px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $Roboto;
+  }
+  input {
+    &[type="text"],
+    &[type="email"],
+    &[type="num"],
+    &[type="password"],
+    &[type="password"],
+    &[type="tel"] {
+      appearance: none;
+      outline: none;
+      background: $whiteColor;
+      border-radius: 0;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 10px;
+      color: $greyMediumColor;
+      font-family: $Roboto;
+      width: 300px;
+      border: 1px solid $greyLightColor;
+      &::-webkit-input-placeholder {
+        color: $greyLightColor;
+      }
+      &::-moz-placeholder {
+        color: $greyLightColor;
+      }
+      &:-ms-input-placeholder {
+        color: $greyLightColor;
+      }
+      &:-moz-placeholder {
+        color: $greyLightColor;
+      }
+    }
+  }
+  .btn {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../../assets/scss/utils/vars';
+@import '../../../assets/scss/utils/fonts';
+
+$adminBarIndent: 10px;
+
+.adminBar {
+  background: $greyDarkColor;
+  color: $greyLightColor;
+  padding: 0 $adminBarIndent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  position: sticky;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: $adminBarSize;
+  box-sizing: border-box;
+  font-family: $Roboto;
+  letter-spacing: 1px;
+  z-index: 100;
+}
